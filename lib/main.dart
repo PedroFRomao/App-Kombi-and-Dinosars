@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'personagens.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+
+// Importações das páginas
+import 'historia.dart';
 
 void main() {
   runApp(GameApp());
@@ -30,7 +33,7 @@ class _GameHomeScreenState extends State<GameHomeScreen> {
         context,
         MaterialPageRoute(
             builder: (context) =>
-                Personagens()), // Altere para sua tela de personagens
+                Historia()), // Altere para sua tela de personagens
       );
     });
   }
@@ -55,7 +58,6 @@ class _GameHomeScreenState extends State<GameHomeScreen> {
           // Conteúdo sobreposto à imagem de fundo
           Center(
             child: SingleChildScrollView(
-              // Adiciona um SingleChildScrollView
               child: Padding(
                 padding:
                     const EdgeInsets.all(20.0), // Adiciona espaço nas bordas
@@ -67,8 +69,8 @@ class _GameHomeScreenState extends State<GameHomeScreen> {
                       image: NetworkImage(
                           'https://github.com/user-attachments/assets/6eccdd27-ff70-4135-9b12-2ce63e709a94'),
                     ),
-                    SizedBox(
-                        height: 350), // Este espaço para image do backgraund
+                    // Ajuste o tamanho do espaço para evitar overflow
+                    SizedBox(height: 150), // Reduzido para evitar overflow
                   ],
                 ),
               ),

@@ -36,6 +36,7 @@ class _PersonagensState extends State<Personagens> {
       'sobrePersonagem': 'Informações sobre o personagem na Fase 2.',
       'ferramenta': 'Ferramenta usada na Fase 2.',
       'imagemFerramenta':
+          //LEMBRA DE TROCAR PARA O DO SEU ZE
           'https://github.com/user-attachments/assets/602d2d39-bca2-48f6-937c-acc1846226d1',
     },
     {
@@ -45,6 +46,7 @@ class _PersonagensState extends State<Personagens> {
       'sobrePersonagem': 'Informações sobre o personagem na Fase 3.',
       'ferramenta': 'Ferramenta usada na Fase 3.',
       'imagemFerramenta':
+          //LEMBRA DE TROCAR PARA A DA MIRELA
           'https://github.com/user-attachments/assets/602d2d39-bca2-48f6-937c-acc1846226d1',
     },
     {
@@ -54,6 +56,7 @@ class _PersonagensState extends State<Personagens> {
       'sobrePersonagem': 'Informações sobre o personagem na Fase 4.',
       'ferramenta': 'Ferramenta usada na Fase 4.',
       'imagemFerramenta':
+          //LEMBRA DE TROCAR PARA O DO ENZO
           'https://github.com/user-attachments/assets/602d2d39-bca2-48f6-937c-acc1846226d1',
     },
   ];
@@ -241,6 +244,8 @@ class _PersonagensState extends State<Personagens> {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 15),
           child: GNav(
+            selectedIndex:
+                _selectedIndex, // Define a aba ativa como o terceiro ícone
             color: Color(0x85000000),
             activeColor: Color(0xffabd904),
             tabBackgroundColor: Color(0x4d5fa90c),
@@ -248,7 +253,6 @@ class _PersonagensState extends State<Personagens> {
             onTabChange: (index) {
               setState(() {
                 _selectedIndex = index;
-                // Navegação entre as telas com base no índice da aba selecionada
               });
             },
             padding: EdgeInsets.all(8),

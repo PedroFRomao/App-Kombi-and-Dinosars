@@ -30,16 +30,16 @@ class _HistoriaState extends State<Historia> {
         backgroundColor: Color(0xff343334), // Cor da AppBar
         automaticallyImplyLeading: false, // Remove o botão de voltar
       ),
-
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 20),
 
+            //imagme
+            //PODE SER ALTERADO PARA O TRAILER
             Center(
               child: SingleChildScrollView(
-                // Adiciona um SingleChildScrollView
                 child: Padding(
                   padding:
                       const EdgeInsets.all(20.0), // Adiciona espaço nas bordas
@@ -51,11 +51,13 @@ class _HistoriaState extends State<Historia> {
                         image: NetworkImage(
                             'https://github.com/user-attachments/assets/6eccdd27-ff70-4135-9b12-2ce63e709a94'),
                       ),
+                      // Ajuste o tamanho do espaço para evitar overflow
                     ],
                   ),
                 ),
               ),
             ),
+
             // Texto sobre a história do jogo
             Padding(
               padding: EdgeInsets.all(16.0),
@@ -70,8 +72,6 @@ class _HistoriaState extends State<Historia> {
                 ),
               ),
             ),
-
-            SizedBox(height: 10),
 
             // Rodapé
             Container(
@@ -117,33 +117,35 @@ class _HistoriaState extends State<Historia> {
               setState(() {
                 _selectedIndex = index;
               });
+              // Navega para a página correspondente
+              if (index == 0) {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Personagens()));
+              } else if (index == 1) {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Historia()));
+              } else if (index == 2) {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Fases()));
+              } else if (index == 3) {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Controles()));
+              }
             },
             padding: EdgeInsets.all(8),
             tabs: [
               GButton(
-                  icon: Icons.person,
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Personagens()));
-                  }),
+                icon: Icons.person,
+              ),
               GButton(
-                  icon: Icons.description,
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Historia()));
-                  }),
+                icon: Icons.description,
+              ),
               GButton(
-                  icon: Icons.map,
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Fases()));
-                  }),
+                icon: Icons.map,
+              ),
               GButton(
-                  icon: Icons.videogame_asset,
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Controles()));
-                  }),
+                icon: Icons.videogame_asset,
+              ),
             ],
           ),
         ),

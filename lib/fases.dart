@@ -79,28 +79,18 @@ class _FasesState extends State<Fases> {
                 return Column(
                   children: [
                     SizedBox(height: 10),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Text(
-                        fases[index]['titulo']!,
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                        textAlign: TextAlign.center, // Centraliza o texto
+                    Text(
+                      fases[index]['titulo']!,
+                      style: TextStyle(
+                        fontSize: 23, // Tamanho do título
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
                     ),
                     SizedBox(height: 10),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16.0), // Espaçamento nas laterais
-                      child: Image.network(
-                        fases[index]['imagemFase']!,
-                        height: 200,
-                        fit: BoxFit
-                            .contain, // Ajusta a imagem ao espaço disponível
-                      ),
+                    Image.network(
+                      fases[index]['imagemFase']!,
+                      height: 200,
                     ),
                   ],
                 );
