@@ -23,22 +23,25 @@ O aplicativo é dividido em 4 principais telas, cada uma com funcionalidades esp
 A estrutura do código está organizada da seguinte maneira:
 
 ``` bash
- KombiAndDinosaursApp/
-├── assets/                # Imagens e ícones
-├── lib/                   # Código fonte do app
-│   ├── models/            # Modelos de dados do jogo
-│   │   ├── 
-│   │   └── 
-│   ├── screens/           # Telas do app
-│   │   ├── 
-│   │   ├── main.dart 
-│   │   └── 
-│   ├── widgets/           # Widgets personalizados para o app
-│   │   ├── 
-│   │   ├──
-│   └── └──
-├── pubspec.yaml           # Dependências e configurações do Flutter
-└── README.md              # Este arquivo README
+KombiAndDinosaursApp/
+├── assets/                           # Imagens e ícones
+├── lib/                              # Código fonte do app
+│   ├── models/                       # Modelos de dados do jogo
+│   │   ├── IntegranteCardData.dart
+│   │   └── app_colors.dart
+│   ├── screens/                      # Telas do app
+│   │   ├── controles.dart
+│   │   ├── fases.dart
+│   │   ├── historia.dart
+│   │   ├── main.dart
+│   │   └── personagens.dart
+│   ├── widgets/                      # Widgets personalizados para o app
+│   │   ├── IntegrantePerfil.dart
+│   │   ├── custom_bottom_nav.dart
+│   │   ├── custom_footer.dart
+│   │   └── integranteCard.dart
+├── pubspec.yaml                      # Dependências e configurações do Flutter
+└── README.md                         # Este arquivo README
 ```
 
 ## 🛠️ Funcionalidades no Código
