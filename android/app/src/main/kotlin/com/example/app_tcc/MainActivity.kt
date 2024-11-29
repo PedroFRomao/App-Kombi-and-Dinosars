@@ -1,4 +1,4 @@
-package com.example.app_faz_ou_bebe
+package com.example.app_tcc
 
 import io.flutter.embedding.android.FlutterActivity
 

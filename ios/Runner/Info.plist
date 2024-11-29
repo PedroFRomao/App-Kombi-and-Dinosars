@@ -13,9 +13,9 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>app_faz_ou_bebe</string>
+	<string>app_tcc</string>
 <key>CFBundleDisplayName</key>
-<string>appfazoubebe</string>
+<string>apptcc</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
