@@ -24,24 +24,32 @@ A estrutura do código está organizada da seguinte maneira:
 
 ``` bash
 KombiAndDinosaursApp/
-├── assets/                           # Imagens e ícones
-├── lib/                              # Código fonte do app
-│   ├── models/                       # Modelos de dados do jogo
+├── assets/                # Imagens e ícones
+├── lib/                   # Código fonte do app
+│   ├── models/            # Modelos de dados do jogo
+│   │   ├── app_colors.dart
+│   │   ├── app_fonts.dart
+│   │   ├── controlesData.dart
+│   │   ├── fasesData.dart
+│   │   ├── homeData.dart
 │   │   ├── IntegranteCardData.dart
-│   │   └── app_colors.dart
-│   ├── screens/                      # Telas do app
+│   │   ├── integrantePerfilData.dart
+│   │   └── PersonagensData.dart
+│   ├── screens/           # Telas do app
 │   │   ├── controles.dart
 │   │   ├── fases.dart
-│   │   ├── historia.dart
-│   │   ├── main.dart
+│   │   ├── home.dart
 │   │   └── personagens.dart
-│   ├── widgets/                      # Widgets personalizados para o app
-│   │   ├── IntegrantePerfil.dart
-│   │   ├── custom_bottom_nav.dart
-│   │   ├── custom_footer.dart
-│   │   └── integranteCard.dart
-├── pubspec.yaml                      # Dependências e configurações do Flutter
-└── README.md                         # Este arquivo README
+│   ├── widgets/           # Widgets personalizados para o app
+│   │   ├── customAppBar.dart
+│   │   ├── customBottomNavBar.dart
+│   │   ├── customFooter.dart
+│   │   ├── HQ.dart
+│   │   ├── integranteCard.dart
+│   │   └── navigationDots.dart
+│   └──main.dart
+├── pubspec.yaml           # Dependências e configurações do Flutter
+└── README.md              # Este arquivo README
 ```
 
 ## 🛠️ Funcionalidades no Código
