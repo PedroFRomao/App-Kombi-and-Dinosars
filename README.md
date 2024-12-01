@@ -7,16 +7,16 @@ O **Kombi and Dinosaurs** é um jogo desenvolvido como parte do nosso TCC, e est
 O aplicativo é dividido em 4 principais telas, cada uma com funcionalidades específicas que ajudam na navegação e interação do usuário.
 
 ### 1. **Home**
-- **Objetivo**: Apresentar uma visão geral do jogo, com uma sinopse da história, uma imagem que leva o usuário para uma página contendo a HQ do jogo, e informações sobre os integrantes da equipe de desenvolvimento. Ao clicar na foto de cada integrante, o usuário é direcionado para uma página com a biografia, currículo e projetos anteriores.
+- Apresenta uma visão geral do jogo, com uma sinopse da história, uma imagem que leva o usuário para uma página contendo a HQ do jogo, e informações sobre os integrantes da equipe de desenvolvimento. Ao clicar na foto de cada integrante, o usuário é direcionado para uma página com a biografia, currículo e projetos anteriores.
 
 ### 2. **Personagens**
-- **Objetivo**: Apresentar os personagens principais do jogo e suas características.
+- Apresenta os personagens principais do jogo e suas características.
   
 ### 3. **Controles**
-- **Objetivo**: Explicar as mecânicas e os controles utilizados durante o jogo.
+- Explica as mecânicas e os controles utilizados durante o jogo.
 
 ### 4. **Fases**
-- **Objetivo**: Detalhar as fases do jogo, explicando os desafios e objetivos de cada uma.
+- Detalha as fases do jogo, explicando os desafios e objetivos de cada uma.
 
 ## 📂 Estrutura do Projeto
 
@@ -32,9 +32,9 @@ KombiAndDinosaursApp/
 │   │   ├── controlesData.dart
 │   │   ├── fasesData.dart
 │   │   ├── homeData.dart
-│   │   ├── IntegranteCardData.dart
+│   │   ├── integranteCardData.dart
 │   │   ├── integrantePerfilData.dart
-│   │   └── PersonagensData.dart
+│   │   └── personagensData.dart
 │   ├── screens/           # Telas do app
 │   │   ├── controles.dart
 │   │   ├── fases.dart
