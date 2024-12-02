@@ -78,5 +78,8 @@ Aqui estão algumas das funcionalidades implementadas no código para as seçõe
 Para acessar os widgets e os models gerals:
 [Widges Gerais](https://github.com/PedroFRomao/App-Kombi-and-Dinosars/wiki/5.-Widgets-gerais) 
 [Models Gerais](https://github.com/PedroFRomao/App-Kombi-and-Dinosars/wiki/6.-Models-gerais)
+
+
+
  
 
