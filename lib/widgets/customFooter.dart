@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import '/models/app_colors.dart';
 
 //CustomFooter
 class CustomFooter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      color: AppColors.bgRodape,
       padding: EdgeInsets.all(16.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -15,8 +16,8 @@ class CustomFooter extends StatelessWidget {
               '© 2024 GUB. Todos os direitos reservados. '
               'Todas as marcas comerciais são propriedade dos respetivos proprietários.',
               style: TextStyle(
-                color: Colors.grey,
-                fontSize: 12,
+                color: AppColors.textoRodape,
+                fontSize: 13,
               ),
             ),
           ),

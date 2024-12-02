@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-//Importações das páginas
-import '/models/IntegranteCardData.dart'; // Use sempre o mesmo caminho
+// Importações das páginas
+import '/models/IntegranteCardData.dart';
+import '/models/app_fonts.dart';
 
 // Widget para exibir os integrantes
 class IntegranteCard extends StatelessWidget {
@@ -19,36 +20,23 @@ class IntegranteCard extends StatelessWidget {
         children: [
           SizedBox(height: 10),
           ClipOval(
-            child: integrante.imagem.contains('http')
-                ? Image.network(
-                    integrante.imagem,
-                    width: 80,
-                    height: 80,
-                    fit: BoxFit.cover,
-                  )
-                : Image.asset(
-                    integrante.imagem,
-                    width: 80,
-                    height: 80,
-                    fit: BoxFit.cover,
-                  ),
+            child: Image.asset(
+              integrante.imagem,
+              width: 80,
+              height: 80,
+              fit: BoxFit.cover,
+            ),
           ),
           SizedBox(height: 8.0),
           Text(
             integrante.nome,
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 15,
-              color: Colors.white,
-            ),
+            textAlign: TextAlign.center, // centralizado
+            style: AppFonts.textoNegrito, // Usando o estilo de texto
           ),
           Text(
             integrante.cargos.join('\n'),
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
-              color: Colors.white,
-            ),
+            textAlign: TextAlign.center, // centralizado
+            style: AppFonts.texto, // Usando o estilo de texto
           ),
         ],
       ),

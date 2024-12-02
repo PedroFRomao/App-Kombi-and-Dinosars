@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+
 // Importações das páginas
-import 'historia.dart';
+import '/screens/home.dart';
+import '/screens/fases.dart';
+import '/screens/personagens.dart';
+import '/screens/controles.dart';
 
 void main() {
   runApp(GameApp());
@@ -10,8 +14,15 @@ class GameApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/', // A rota inicial
+      routes: {
+        '/': (context) => GameHomeScreen(), // Tela de carregamento
+        '/home': (context) => Home(), // Tela Home
+        '/fases': (context) => Fases(),
+        '/personagens': (context) => Personagens(),
+        '/controles': (context) => Controles(),
+      },
       debugShowCheckedModeBanner: false, // Remove o banner de debug
-      home: GameHomeScreen(),
     );
   }
 }
@@ -25,11 +36,11 @@ class _GameHomeScreenState extends State<GameHomeScreen> {
   @override
   void initState() {
     super.initState();
-    // Navegar para a tela de historia após 2 segundos
+    // Atraso de 2 segundos antes de navegar para a tela Home
     Future.delayed(Duration(seconds: 2), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => Historia()),
+        MaterialPageRoute(builder: (context) => Home()), // Navega para Home
       );
     });
   }
@@ -50,7 +61,6 @@ class _GameHomeScreenState extends State<GameHomeScreen> {
               ),
             ),
           ),
-
           // Logo e tela de introdução
           Center(
             child: SingleChildScrollView(
